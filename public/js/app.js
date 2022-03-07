@@ -1,5 +1,3 @@
-console.log('client side javascript')
-
 // fetch('http://localhost:3000/Weather?address=Bhubaneswar').then((response) => {
 //     response.json().then((data) => {
 //         if(data.error) {
