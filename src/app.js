@@ -4,6 +4,11 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
+const os = require( 'os' );
+const networkInterfaces = os.networkInterfaces();
+const ipvar = networkInterfaces['Wi-Fi'][1].address
+
+
 const app = express()
 const port = process.env.PORT || 3000
 
@@ -30,7 +35,7 @@ app.get('',(req,res) => {
 app.get('/about',(req,res) => {
     res.render('about', {
         title: 'About',
-        name: 'Debi Prasad Mahapatra'
+        name: ipvar
     })
 })
 
