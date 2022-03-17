@@ -4,9 +4,8 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
-const os = require( 'os' );
-const networkInterfaces = os.networkInterfaces();
-const ipvar = networkInterfaces['Wi-Fi'][1].address
+const ip = require("ip")
+ipvar = ip.address()
 
 
 const app = express()

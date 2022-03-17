@@ -12,6 +12,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "hbs": "^4.0.1",
+    "ip": "^1.1.5",
+    "local-ip": "^2.0.0",
     "request": "^2.88.0"
   },
   "devDependencies": {
