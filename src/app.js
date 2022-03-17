@@ -6,10 +6,11 @@ const forecast = require('./utils/forecast')
 
 const ip = require("ip")
 ipvar = ip.address()
+console.log(ipvar)
 
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 80
 
 // Define paths for express config
 const publicDirPath = path.join(__dirname,'../public')
